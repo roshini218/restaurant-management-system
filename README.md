@@ -1,4 +1,4 @@
-# 🍽️ Snack n Joy — Restaurant Management System
+# 🍽️ Regal Crest — Restaurant Management System
 
 A full-stack Restaurant Management System built with **React**, **Node.js (Express)**, and **SQLite**. Designed as a DBMS project with a schema-first, SQL-centric architecture where all database logic is centralized in the `/db` directory.
 

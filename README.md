@@ -20,7 +20,7 @@ A full-stack Restaurant Management System built with **React**, **Node.js (Expre
 
 ## Overview
 
-**Snack n Joy** is a restaurant management web application that allows staff to:
+**Regal Crest** is a restaurant management web application that allows staff to:
 - Browse and select items from a categorized Indian cuisine menu
 - Place orders for specific table numbers
 - Track and manage active/pending orders
@@ -205,4 +205,4 @@ node reset_db.js
 
 ---
 
-*Built as a DBMS Project — Snack n Joy © 2026*
+*Built as a DBMS Project — Regal Crest © 2026*

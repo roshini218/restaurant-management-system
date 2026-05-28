@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-xl;
+  }
+  .glass-dark {
+    @apply bg-[#0f1a0b]/80 backdrop-blur-md border border-[#D4AF37]/30 shadow-xl;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fdfbf7;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+}
+
+/* Custom scrollbar for dark areas */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.4);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.8);
+}
+
+/* Royal Corner Utility */
+.royal-corner {
+  @apply fixed w-32 h-32 pointer-events-none z-[100];
+}
+.royal-corner-inner {
+  @apply absolute inset-0 border-gold/40;
+}
+.royal-corner-outer {
+  @apply absolute inset-[-4px] border-gold/20;
+}
+
+.corner-tl { @apply top-6 left-6; }
+.corner-tl .royal-corner-inner { @apply border-t-2 border-l-2 rounded-tl-xl; }
+.corner-tl .royal-corner-outer { @apply border-t border-l rounded-tl-2xl; }
+
+.corner-tr { @apply top-6 right-6; }
+.corner-tr .royal-corner-inner { @apply border-t-2 border-r-2 rounded-tr-xl; }
+.corner-tr .royal-corner-outer { @apply border-t border-r rounded-tr-2xl; }
+
+.corner-bl { @apply bottom-6 left-6; }
+.corner-bl .royal-corner-inner { @apply border-b-2 border-l-2 rounded-bl-xl; }
+.corner-bl .royal-corner-outer { @apply border-b border-l rounded-bl-2xl; }
+
+.corner-br { @apply bottom-6 right-6; }
+.corner-br .royal-corner-inner { @apply border-b-2 border-r-2 rounded-br-xl; }
+.corner-br .royal-corner-outer { @apply border-b border-r rounded-br-2xl; }
